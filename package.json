@@ -1,0 +1,32 @@
+{
+  "name": "sapbtpdms",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/xsenv": "^5.1.0",
+    "axios": "^1.7.2",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^3",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "dms": {
+        "kind": "sdm",
+        "credentials": {
+          "destination": "aimmiddleware-dms-service"
+        }
+      }
+    }
+  }
+}

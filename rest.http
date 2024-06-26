@@ -1,0 +1,6 @@
+
+### Get Folder Details
+GET http://localhost:4004/odata/v4/data-management/getFolderDetails(folderName='')
+
+### Get Document
+GET http://localhost:4004/odata/v4/data-management/getDocument(objectId='')
